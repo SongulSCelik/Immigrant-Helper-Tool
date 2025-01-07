@@ -54,12 +54,6 @@ This toolkit fosters inclusivity, empowerment, and confidence for immigrants dur
 
 ---
 
-# 🚀 How to Run
-
-### Clone the Repository
-```bash
-git clone https://github.com/YourGitHubUsername/ImmigrantAssistanceToolkit.git
-cd ImmigrantAssistanceToolkit
 
 ---
 #📋 Usage Guide
@@ -127,3 +121,12 @@ To make the Immigrant Assistance Toolkit more inclusive, effective, and scalable
 ---
 
 By addressing these blind spots and implementing the enhancements outlined above, the toolkit can evolve into a comprehensive solution, empowering immigrants and fostering stronger, more inclusive communities.
+
+
+# 🚀 How to Run
+
+### Clone the Repository
+```bash
+git clone https://github.com/YourGitHubUsername/ImmigrantAssistanceToolkit.git
+cd ImmigrantAssistanceToolkit
+---
