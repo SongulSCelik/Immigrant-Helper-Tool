@@ -37,37 +37,88 @@ This toolkit fosters inclusivity, empowerment, and confidence for immigrants dur
 # 📚 Program Structure
 
 ## **Core Classes**
-- **Immigrant:** Manages immigrant-specific details, goals, and progress.  
-- **Volunteer:** Handles mentor registration, expertise, and availability.  
-- **Resource:** Organizes community resources and provides efficient search functionality.  
-- **MentorManager:** Oversees mentor matching and management.
+1. **Immigrant:**
+   - Manages immigrant-specific details, such as name, email, native language, desired language, location, and goals.
+   - Tracks progress through a progress log (list of dictionaries with session details and timestamps).
+   - Provides methods to view and update goals and progress logs.
+
+2. **Volunteer:**
+   - Handles mentor registration, including name, email, expertise, available languages, and availability status.
+   - Supports different areas of expertise through specialized subclasses:
+     - **LanguageMentor:** Focused on language practice.
+     - **CulturalIntegrationMentor:** Specializes in helping with cultural adaptation.
+     - **CareerMentor:** Provides career-related guidance.
+     - **HealthAdvisor:** Assists with navigating healthcare systems.
+     - **LegalAdvisor:** Offers advice on legal matters.
+   - Allows mentors to update their availability.
+
+3. **Resource:**
+   - Organizes community resources categorized by location and type (e.g., health, legal, education).
+   - Enables efficient search functionality using **Selection Sort** and **Binary Search** algorithms.
+   - Supports adding, viewing, and managing resources dynamically.
+
+4. **MentorManager:**
+   - Manages mentor registration and matching with immigrants.
+   - Matches immigrants with mentors based on availability, language compatibility, and expertise.
+   - Allows viewing and removing mentors, as well as listing all mentors in the system.
+
+---
 
 ## **Data Handling**
-- Persistent storage of user and resource data in JSON format.  
-- Helper functions (`save_data` and `load_data`) for smooth data management.
+- **Persistent Storage:**
+  - User and resource data are stored in JSON files (`immigrants.json`, `mentors.json`, `resources.json`), ensuring data continuity across sessions.
+  - JSON-based storage allows the program to easily save and load structured data.
+
+- **Helper Functions:**
+  - `save_data`: Saves dictionaries to JSON files with error handling.
+  - `load_data`: Loads data from JSON files, handling missing files or invalid formats gracefully.
+
+---
 
 ## **Algorithms and Logic**
-- **Recursion:** Efficient resource search.  
-- **Conditional Statements:** For decision-making across menus.  
-- **Loops:** Handle iterative tasks like mentor matching and resource updates.  
-- **Error Handling:** Ensures robust functionality and user-friendly feedback.
+1. **Recursion:**
+   - Utilized in **binary search** for efficient resource retrieval.
+
+2. **Conditional Statements:**
+   - For role-specific decision-making (e.g., Immigrant vs. Volunteer menus).
+
+3. **Loops:**
+   - Handle iterative tasks such as mentor matching, listing resources, and managing user inputs.
+
+4. **Error Handling:**
+   - Provides robust functionality by catching common exceptions (e.g., file not found, invalid input).
+   - Includes a `DEBUG_MODE` flag to enable additional logging for troubleshooting.
+
+5. **Sorting and Searching:**
+   - Implements **Selection Sort** to order locations and categories before performing **Binary Search** for fast lookups.
+
+---
+
+## Why This Structure?
+- **Scalability:** The modular design makes it easy to add new features, such as real-time chat or additional roles.
+- **Efficiency:** Algorithms like binary search ensure that the program can handle a growing number of resources efficiently.
+- **User-Friendly Design:** Clear role-specific menus and intuitive navigation ensure ease of use for all types of users.
 
 ---
 
 
 ---
-📋 Usage Guide
+## 📋 Usage Guide
 
-Immigrants:
-Define goals and track progress.
-Connect with mentors based on language and expertise.
-Access curated community resources.
-Volunteers:
-Register as mentors.
-Provide personalized guidance to immigrants.
-Administrators:
-Add, update, and manage community resources.
-Oversee mentor and user databases.
+### For Immigrants:
+- Define your goals (e.g., "Learn English", "Find Career Guidance").
+- Match with a mentor who speaks your language and specializes in your area of interest.
+- Access resources in your city (e.g., "Legal Aid in San Francisco").
+- View and update your progress log.
+
+### For Volunteers:
+- Register as a mentor with your expertise (e.g., "Language", "Career").
+- Set your availability status (Available/Unavailable).
+- View your mentees and track their progress.
+
+### For Administrators:
+- Add, update, and delete community resources.
+- Oversee the mentor and immigrant databases.
 
 ---
 # 🌟 Future Development and Blind Spots
