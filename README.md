@@ -56,7 +56,7 @@ This toolkit fosters inclusivity, empowerment, and confidence for immigrants dur
 
 
 ---
-#📋 Usage Guide
+📋 Usage Guide
 
 Immigrants:
 Define goals and track progress.
