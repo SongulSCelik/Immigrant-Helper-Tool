@@ -87,9 +87,6 @@ The Immigrant Assistance Toolkit, while promising, has areas for improvement to 
 - **Mentor Specialization:**  
   Mentors are currently restricted to a single area of expertise, limiting flexibility and accurate matching for diverse immigrant needs.
 
-- **Assumption of English Proficiency:**  
-  The program currently assumes English proficiency, potentially excluding non-English-speaking immigrants.
-
 ---
 
 ## **Future Enhancements**
@@ -112,7 +109,6 @@ To make the Immigrant Assistance Toolkit more inclusive, effective, and scalable
   Allow mentors to select multiple areas of expertise to better match immigrants with complex or diverse needs.
 
 - **Expanded Accessibility:**  
-  - Translate the platform into multiple languages to accommodate non-English-speaking users.  
   - Introduce localized versions based on specific immigration policies in different countries.
 
 - **Real-Time Data Updates:**  
